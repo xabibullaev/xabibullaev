@@ -1,0 +1,127 @@
+.commitment {
+  &__box {
+    margin-top: 170px;
+    width: 1110px;
+    height: 520px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__bg {
+    margin-left: 85px;
+  }
+  &__img {
+    border-radius: 10px;
+  }
+  &__content {
+    margin-left: 125px;
+    margin-top: 90px;
+    width: 540px;
+  }
+  &__title {
+    font-family: "Fraunces ";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #333d4b;
+  }
+  &__text {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333d4b;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .commitment {
+    &__container {
+      width: 689px;
+      margin: 0 auto;
+    }
+    &__box {
+      margin-left: 0;
+      margin-top: 120px;
+      width: 689px;
+    }
+    &__bg {
+      margin-left: 0;
+    }
+    &__img {
+      width: 281px;
+      height: 470px;
+    }
+    &__content {
+      margin-top: 0;
+      margin-left: 68px;
+    }
+    &__text {
+      font-family: "Fraunces ";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 32px;
+      line-height: 48px;
+      color: #333d4b;
+    }
+    &__text {
+      margin-top: 30px;
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      color: #333d4b;
+      mix-blend-mode: normal;
+      opacity: 0.8;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .commitment {
+    &__container {
+      width: 327px;
+      margin: 0 auto;
+    }
+    &__box {
+      display: flex;
+      flex-direction: column;
+    }
+    &__bg {
+      margin-left: 0;
+    }
+    &__img {
+      width: 320px;
+      height: 400px;
+      margin-left: 0;
+    }
+    &__content {
+      width: 328px;
+      margin-left: 0;
+      margin-top: 50px;
+    }
+    &__title {
+      font-family: "Fraunces";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 32px;
+      line-height: 48px;
+      text-align: center;
+      color: #333d4b;
+    }
+    &__text {
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      text-align: center;
+      color: #333d4b;
+      mix-blend-mode: normal;
+      opacity: 0.8;
+    }
+  }
+}

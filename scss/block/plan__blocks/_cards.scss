@@ -1,0 +1,143 @@
+.order {
+  &__flex {
+    display: flex;
+    column-gap: 125px;
+  }
+  &__aside {
+    width: 255px;
+    margin-top: 136px;
+    margin-left: 85px;
+  }
+  &__box {
+    margin-top: 160px;
+  }
+}
+.stage {
+  &__box {
+    display: flex;
+    flex-direction: column;
+  }
+  &__flex {
+    display: flex;
+    column-gap: 18px;
+    opacity: 0.5;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  &__content {
+    margin-top: 24px;
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333d4b;
+  }
+  &__line {
+    margin-top: 24px;
+    width: 255px;
+    height: 1px;
+    background: #83888f;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+  }
+}
+
+.card {
+  &__box {
+    width: 730px;
+  }
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #83888f;
+  }
+  &__list {
+    display: flex;
+    column-gap: 23px;
+    margin-top: 55px;
+    margin-bottom: 90px;
+  }
+  &__item {
+    width: 228px;
+    background: #f4f1eb;
+    border-radius: 8px;
+    &:hover {
+      background: #0e8784;
+      color: #f4f1eb;
+    }
+  }
+  &__subtitle {
+    padding-left: 28px;
+    padding-top: 32px;
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333d4b;
+  }
+  &__text {
+    margin-top: 24px;
+    margin-bottom: 84px;
+    width: 172px;
+    padding-left: 28px;
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333d4b;
+  }
+}
+.summary {
+  &__box {
+    width: 730px;
+
+    background: #2c343e;
+  }
+  &__title {
+    padding-top: 32px;
+    padding-left: 64px;
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  &__text {
+    padding-left: 64px;
+    margin-top: 8px;
+    padding-bottom: 24px;
+    width: 602px;
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 40px;
+    color: #ffffff;
+  }
+  &__span {
+    color: #0e8784;
+  }
+  &__button {
+    margin-top: 40px;
+    margin-left: 513px;
+    @include button;
+    border: none;
+    padding: 16px 35px;
+  }
+}

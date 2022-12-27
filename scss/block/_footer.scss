@@ -1,0 +1,122 @@
+.footer {
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+  &__box {
+    margin-top: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #2c343e;
+  }
+  &__logo {
+    margin-left: 85px;
+  }
+  &__list {
+    margin-left: 100px;
+    display: flex;
+    column-gap: 33px;
+  }
+  &__item {
+    @include footer;
+  }
+  &__link {
+    color: #83888f;
+  }
+  &__media {
+    margin-left: 370px;
+    display: flex;
+    column-gap: 24px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer {
+    &__box {
+      background: #2c343e;
+      margin-top: 240px;
+      height: 270px;
+    }
+    &__container {
+      width: 689px;
+      margin-top: 30px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+    }
+
+    &__logo {
+      margin-left: 0;
+      margin: 0 auto;
+    }
+    &__list {
+      display: flex;
+      margin: 0 auto;
+      margin-top: 33px;
+    }
+    &__item {
+      text-align: center;
+
+      height: 15px;
+    }
+
+    &__link {
+      width: 283px;
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+
+      text-transform: uppercase;
+      color: #83888f;
+      width: 121px;
+    }
+    &__width {
+      width: 121px;
+    }
+    &__media {
+      margin: 0 auto;
+      margin-top: 65px;
+    }
+    &__icon {
+      margin-bottom: 60px;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .footer {
+    width: 100%;
+    &__container {
+      width: 327px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+    &__box {
+      margin-top: 480px;
+    }
+    &__logo {
+      margin: 0 auto;
+
+      width: 217.85px;
+      height: 24px;
+    }
+    &__list {
+      margin: 0 auto;
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 24px;
+      width: 212px;
+      text-align: center;
+    }
+    &__media {
+      width: 120px;
+
+      margin: 0 auto;
+      margin-top: 50px;
+    }
+  }
+}

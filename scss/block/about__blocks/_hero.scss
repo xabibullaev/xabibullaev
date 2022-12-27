@@ -1,0 +1,108 @@
+.hero {
+  &__box {
+    width: 1280px;
+    height: 450px;
+    background-image: url("../img/about__background.png");
+    border-radius: 10px;
+  }
+  &__content {
+    margin-left: 85px;
+    padding-top: 140px;
+    width: 445px;
+  }
+  &__title {
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #fefcf7;
+  }
+  &__text {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #fefcf7;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero {
+    &__container {
+      margin: 0 auto;
+      width: 689px;
+    }
+    &__box {
+      padding-top: 50px;
+      height: 400px;
+      width: 689px;
+
+      border-radius: 10px;
+      background-image: url("../img/about__tablet.png");
+    }
+    &__content {
+      padding-top: 0;
+      margin-left: 56px;
+      margin-top: 60px;
+    }
+
+    &__title {
+      font-family: "Fraunces ";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 32px;
+      line-height: 40px;
+      color: #fefcf7;
+    }
+    &__text {
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      color: #fefcf7;
+      mix-blend-mode: normal;
+      opacity: 0.8;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .hero {
+    &__container {
+      width: 327px;
+      margin: 0 auto;
+    }
+    &__box {
+      width: 327px;
+      margin-top: 40px;
+      background-image: url("../img/about__phone.png");
+    }
+    &__content {
+      width: 280px;
+      margin-left: 24px;
+    }
+    &__title {
+      font-family: "Fraunces";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 28px;
+      line-height: 28px;
+      text-align: center;
+      color: #fefcf7;
+    }
+    &__text {
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      text-align: center;
+      color: #fefcf7;
+      mix-blend-mode: normal;
+      opacity: 0.8;
+    }
+  }
+}

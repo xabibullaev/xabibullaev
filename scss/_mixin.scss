@@ -1,0 +1,53 @@
+@mixin button {
+  display: block;
+  padding-top: 16px;
+  width: 217px;
+  height: 56px;
+  background: #0e8784;
+  border-radius: 6px;
+  color: #fefcf7;
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #fefcf7;
+
+  &:hover {
+    background: #66d2cf;
+    border-radius: 6px;
+  }
+  &:disabled {
+    background: #e2dedb;
+    border-radius: 6px;
+  }
+}
+@mixin link--header {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.923077px;
+  text-transform: uppercase;
+  color: #83888f;
+  :hover {
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #333d4b;
+  }
+}
+@mixin footer {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.923077px;
+  text-transform: uppercase;
+  color: #83888f;
+  :hover {
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #fefcf7;
+  }
+}

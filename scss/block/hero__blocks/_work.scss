@@ -1,0 +1,252 @@
+.work {
+  &__box {
+    margin-top: 270px;
+  }
+  &__title {
+    margin-left: 85px;
+    font-family: "Fraunces 9pt";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    color: #83888f;
+  }
+  &__list {
+    margin-left: 85px;
+    display: flex;
+    column-gap: 95px;
+  }
+  &__item {
+    width: 285px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+  }
+  &__number {
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+
+    color: #fdd6ba;
+  }
+  &__subtitle {
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+
+    color: #333d4b;
+  }
+  &__text {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333d4b;
+  }
+  &__btn {
+    margin-top: 70px;
+    margin-left: 85px;
+    @include button;
+  }
+}
+
+.line {
+  &__line {
+    margin-left: 85px;
+    margin-top: 95px;
+    margin-bottom: 90px;
+    width: 760px;
+    position: relative;
+    border: 2px solid #fdd6ba;
+    background-color: #fdd6ba;
+  }
+}
+.work__circles {
+  position: relative;
+  width: 760px;
+  display: flex;
+}
+.circle1 {
+  position: absolute;
+  bottom: 77px;
+  left: 85px;
+}
+.circle2 {
+  position: absolute;
+  bottom: 77px;
+  left: 425px;
+}
+.circle3 {
+  position: absolute;
+  bottom: 77px;
+  left: 755px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .work {
+    &__box {
+      height: 570px;
+
+      margin-top: 450px;
+    }
+    &__container {
+      width: 689px;
+      margin-top: 30px;
+      margin: 0 auto;
+    }
+    &__title {
+      font-family: "Fraunces";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 32px;
+      color: #83888f;
+      margin-left: 0;
+    }
+    &__circles {
+      margin-left: 0;
+      width: 467px;
+    }
+    &__list {
+      margin-left: 0;
+    }
+    &__item {
+      width: 223px;
+    }
+    &__number {
+      font-family: "Fraunces";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 72px;
+      line-height: 72px;
+      color: #fdd6ba;
+    }
+    &__subtitle {
+      font-family: "Fraunces";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 28px;
+      line-height: 32px;
+      color: #333d4b;
+    }
+    &__text {
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      color: #333d4b;
+    }
+    &__btn {
+      width: 217px;
+      font-family: "Fraunces";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 18px;
+      line-height: 25px;
+      text-align: center;
+      color: #fefcf7;
+      margin-left: 0;
+      margin-top: 44px;
+    }
+  }
+  .line {
+    &__line {
+      margin-left: 0;
+      width: 467px;
+    }
+  }
+  .circle1 {
+    position: absolute;
+    bottom: 77px;
+    left: 0px;
+  }
+  .circle2 {
+    position: absolute;
+    bottom: 77px;
+    left: 233px;
+  }
+  .circle3 {
+    position: absolute;
+    bottom: 77px;
+    left: 460px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .work {
+    &__container {
+      width: 327px;
+      margin: 0 auto;
+    }
+    &__box {
+      margin-top: 700px;
+      width: 327px;
+      height: 950px;
+    }
+    &__circles {
+      display: none;
+    }
+    &__title {
+      margin-left: 0;
+      font-family: "Fraunces";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 32px;
+      text-align: center;
+      color: #83888f;
+    }
+    &__list {
+      margin-top: 80px;
+      margin-left: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    &__item {
+      width: 327px;
+    }
+    &__number {
+      margin-top: 56px;
+      margin-left: 0;
+      font-family: "Fraunces";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 72px;
+      line-height: 72px;
+      text-align: center;
+      color: #fdd6ba;
+    }
+    &__subtitle {
+      font-family: "Fraunces";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 28px;
+      line-height: 32px;
+      text-align: center;
+      color: #333d4b;
+    }
+    &__text {
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      text-align: center;
+      color: #333d4b;
+    }
+    &__btn {
+      margin: 0 auto;
+      margin-top: 96px;
+      font-family: "Fraunces ";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 18px;
+      line-height: 25px;
+      text-align: center;
+      color: #fefcf7;
+    }
+  }
+}
